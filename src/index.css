@@ -2,7 +2,7 @@
   /* --- LIGHT MODE (Clean, Soft Blue/White Mesh) --- */
   --bg-color: #ffffff;
   --card-bg: rgba(255, 255, 255, 0.8); /* Slightly transparent cards */
-  --text-color: #1a1a1a;
+  --text-color: #4448b3;
   --accent-color: #0051ff; 
   --neon-glow: none;
   
@@ -64,6 +64,7 @@ body {
   display: inline-block;
   box-shadow: var(--neon-glow); /* The magic glow */
   transition: transform 0.2s;
+  box-sizing: border-box;
 }
 .btn:hover { transform: scale(1.05); }
 

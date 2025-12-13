@@ -34,9 +34,41 @@ export default function Navbar({ theme, toggleTheme }) {
       <div className="mobile-toggle" style={{ display: 'none' }}>
         <button onClick={() => setIsOpen(!isOpen)}>{isOpen ? <X color="var(--text-color)"/> : <Menu color="var(--text-color)"/>}</button>
       </div>
-      
-      {/* Responsive Note: In a real app, use CSS media queries to hide/show .desktop-menu. 
-          For this assignment, ensure you check the screen size or add a simple media query in index.css */}
+      {isOpen && (
+        <div style={{
+          position: 'absolute',
+          top: '100%',
+          left: 0,
+          width: '100%',
+          background: 'var(--card-bg)', /* Matches your theme */
+          borderBottom: '1px solid var(--accent-color)',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          padding: '20px 0',
+          gap: '20px',
+          backdropFilter: 'blur(12px)'
+        }}>
+          <a href="#hero" onClick={() => setIsOpen(false)} style={{ color: 'var(--text-color)', textDecoration: 'none', fontSize: '1.2rem' }}>Home</a>
+          <a href="#courses" onClick={() => setIsOpen(false)} style={{ color: 'var(--text-color)', textDecoration: 'none', fontSize: '1.2rem' }}>Courses</a>
+          <a href="#about" onClick={() => setIsOpen(false)} style={{ color: 'var(--text-color)', textDecoration: 'none', fontSize: '1.2rem' }}>About</a>
+          
+          {/* Mobile Theme Toggle */}
+          <button onClick={() => { toggleTheme(); setIsOpen(false); }} style={{ 
+            background: 'var(--accent-color)', 
+            border: 'none', 
+            cursor: 'pointer', 
+            color: '#fff',
+            padding: '10px 20px',
+            borderRadius: '20px',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '10px'
+          }}>
+            {theme === 'dark' ? <>Light Mode <Sun size={16} /></> : <>Dark Mode <Moon size={16} /></>}
+          </button>
+        </div>
+      )}
     </nav>
   );
 }
