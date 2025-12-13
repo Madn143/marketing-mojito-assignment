@@ -1,0 +1,80 @@
+:root {
+  /* --- LIGHT MODE (Clean, Soft Blue/White Mesh) --- */
+  --bg-color: #ffffff;
+  --card-bg: rgba(255, 255, 255, 0.8); /* Slightly transparent cards */
+  --text-color: #1a1a1a;
+  --accent-color: #0051ff; 
+  --neon-glow: none;
+  
+  /* The Magic Gradient: White base with soft blue and purple orbs */
+  --main-gradient: 
+    radial-gradient(circle at 15% 50%, rgba(200, 220, 255, 0.8), transparent 25%), 
+    radial-gradient(circle at 85% 30%, rgba(220, 200, 255, 0.8), transparent 25%);
+}
+
+[data-theme='dark'] {
+  /* --- DARK MODE (Deep Space, Scattered Neon Blues) --- */
+  --bg-color: #000000;
+  --card-bg: rgba(20, 20, 30, 0.6); /* Glassmorphism effect */
+  --text-color: #e0e0e0;
+  --accent-color: #00f3ff;
+  --neon-glow: 0 0 10px rgba(0, 243, 255, 0.5), 0 0 20px rgba(0, 243, 255, 0.3);
+
+  /* The Magic Gradient: Black base with scattered deep blue and cyan orbs */
+  --main-gradient: 
+    radial-gradient(circle at 10% 20%, rgba(0, 50, 255, 0.2), transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(0, 243, 255, 0.15), transparent 40%),
+    radial-gradient(circle at 50% 50%, rgba(20, 20, 60, 1), transparent 60%);
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  
+  /* Apply the background color AND the gradient mesh */
+  background-color: var(--bg-color);
+  background-image: var(--main-gradient);
+  
+  /* Lock the background so the gradient doesn't scroll with the page (Parallax feel) */
+  background-attachment: fixed; 
+  background-size: cover;
+  
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  min-height: 100vh;
+}
+
+/* Update cards to be slightly "Glassy" to let the background show through */
+.course-grid > div {
+  background: var(--card-bg) !important; /* Override inline styles */
+  backdrop-filter: blur(10px); /* The "Frosted Glass" effect */
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+/* Utilities */
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+.btn {
+  padding: 10px 20px;
+  background: var(--accent-color);
+  color: white; /* Always white text on button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: var(--neon-glow); /* The magic glow */
+  transition: transform 0.2s;
+}
+.btn:hover { transform: scale(1.05); }
+
+/* Responsive Grid */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .desktop-menu { display: none !important; }
+  .mobile-toggle { display: block !important; }
+}

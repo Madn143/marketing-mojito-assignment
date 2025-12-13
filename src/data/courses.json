@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "React Zero to Hero",
+    "category": "Frontend",
+    "description": "Master React JS with real-world projects.",
+    "link": "https://www.youtube.com/watch?v=82PXenL4MGg",
+    "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 2,
+    "title": "Python for Data Science",
+    "category": "Data Science",
+    "description": "Analyze data and build AI models.",
+    "link": "https://www.udemy.com/course/python-data-science-master-course/?couponCode=25BBPMXNVD35",
+    "image": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 3,
+    "title": "Advanced CSS & Sass",
+    "category": "Design",
+    "description": "Create stunning layouts and animations.",
+    "link": "https://freecodecamp.org",
+    "image": "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 4,
+    "title": "Node.js Backend Guide",
+    "category": "Backend",
+    "description": "Build scalable APIs and servers.",
+    "link": "https://udemy.com",
+    "image": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 5,
+    "title": "Cybersecurity Basics",
+    "category": "Security",
+    "description": "Learn to protect systems from attacks.",
+    "link": "https://coursera.org",
+    "image": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=500&auto=format&fit=crop&q=60"
+  }
+]
