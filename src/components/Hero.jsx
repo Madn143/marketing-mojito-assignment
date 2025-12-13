@@ -3,11 +3,20 @@ import { useEffect, useState } from 'react';
 export default function Hero() {
   const [quote, setQuote] = useState("Loading inspiration...");
 
+  // SAFE MODE: Use a local list instead of a risky API
+  const quotes = [
+    "Code is like humor. When you have to explain it, it’s bad.",
+    "First, solve the problem. Then, write the code.",
+    "Simplicity is the soul of efficiency.",
+    "Make it work, make it right, make it fast."
+  ];
+
   useEffect(() => {
-    fetch('https://api.quotable.io/random?tags=technology')
-      .then(res => res.json())
-      .then(data => setQuote(`"${data.content}"`))
-      .catch(() => setQuote('"Code is like humor. When you have to explain it, it’s bad."'));
+    // Simulate an API call with a 0.5s delay (so it looks real)
+    setTimeout(() => {
+      const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+      setQuote(`"${randomQuote}"`);
+    }, 500);
   }, []);
 
   return (

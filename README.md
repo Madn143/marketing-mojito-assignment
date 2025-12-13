@@ -1,4 +1,4 @@
-# ⚡ test.dev Code Academy
+# ⚡ Neon Code Academy
 
 ![Project Status](https://img.shields.io/badge/Status-Completed-success?style=flat-square)
 ![Tech Stack](https://img.shields.io/badge/React-Vite-blue?style=flat-square&logo=react)
@@ -47,6 +47,21 @@ It was built to demonstrate proficiency in **Frontend Architecture**, **API Inte
 
 ---
 
+## ✅ Assignment Checklist
+
+This project fulfills all requirements specified in the Marketing Mojito internship brief:
+
+| Requirement | Status | Implementation Details |
+| :--- | :---: | :--- |
+| **Course List** | ✅ | Mapped from JSON data with specific categories. |
+| **Search Functionality** | ✅ | Real-time filtering by name and category. |
+| **Public API Integration** | ✅ | **Double Integration:** Quotes API in Hero + GitHub API in Stats. |
+| **Component Structure** | ✅ | Modular architecture (`Hero`, `CourseList`, `TechStats`, `Navbar`). |
+| **Responsiveness** | ✅ | Mobile-first menu and flexible grid layouts. |
+| **Deployment** | ✅ | Deployed live on Vercel. |
+
+---
+
 ## 💻 How to Run Locally
 
 If you want to run this project on your own machine:
@@ -74,17 +89,7 @@ If you want to run this project on your own machine:
 
 ## 📂 Project Structure
 
-src/ 
-├── components/ 
-│ ├── Hero.jsx # Video background & API Quote fetch 
-│ ├── CourseList.jsx # Search logic & Course Grid 
-│ ├── TechStats.jsx # Recharts Graph & GitHub API logic 
-│ ├── Navbar.jsx # Theme toggle & Mobile Menu 
-│ └── About.jsx # Static info section 
-├── data/ 
-│ └── courses.json # Dummy data for course listings 
-├── App.jsx # Main layout & State management 
-└── index.css # Global styles & Neon variables
+src/ ├── components/ │ ├── Hero.jsx # Video background & API Quote fetch │ ├── CourseList.jsx # Search logic & Course Grid │ ├── TechStats.jsx # Recharts Graph & GitHub API logic │ ├── Navbar.jsx # Theme toggle & Mobile Menu │ └── About.jsx # Static info section ├── data/ │ └── courses.json # Dummy data for course listings ├── App.jsx # Main layout & State management └── index.css # Global styles & Neon variables
 
 ---
 
