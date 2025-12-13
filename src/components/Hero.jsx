@@ -34,7 +34,7 @@ export default function Hero() {
       {/* 1. THE VIDEO BACKGROUND */}
       <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: '#000', zIndex: -2 }}>
         <video autoPlay loop muted style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.6 }}>
-              <source src="../src/assets/bg-hero.mp4" type="video/mp4" />
+              <source src="/bg-hero.mp4" type="video/mp4" />
         </video>
       </div>
 
