@@ -6,7 +6,7 @@
 
 > **"Code in Style."** A futuristic, responsive course finder application built as part of the Marketing Mojito Web Developer Internship assignment.
 
-🔗 **[View Live Demo](PUT_YOUR_VERCEL_LINK_HERE)**
+🔗 **[View Live Demo](https://marketing-mojito-assignment.vercel.app/)**
 
 ---
 
@@ -96,8 +96,8 @@ src/ ├── components/ │ ├── Hero.jsx # Video background & API Quote
 ## 👨‍💻 Author
 
 **Your Name**
-* [LinkedIn](YOUR_LINKEDIN_URL)
-* [GitHub](https://github.com/YOUR_USERNAME)
+* [LinkedIn](https://www.linkedin.com/in/madana-suthan-n-web-dev/)
+* [GitHub](https://github.com/Madn143)
 
 ---
 
